@@ -94,6 +94,11 @@ ordem_renda = [
 ]
 
 # --- BARRA LATERAL (FILTROS) ---
+try:
+    st.sidebar.image("image_transparent.png", use_column_width=True)
+except FileNotFoundError:
+    pass
+
 st.sidebar.header("Filtros")
 st.sidebar.markdown("Selecione uma ou mais opções para filtrar:")
 
